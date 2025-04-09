@@ -1,0 +1,44 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+
+}
+.contenier{
+    width: 120px;
+    height: 120px;
+    margin: 200px auto;
+    position: relative;
+    padding: 40px;
+
+}
+.sun{
+    width: 120px;
+    height: 120px;
+    background: url(https://static.vecteezy.com/system/resources/thumbnails/040/325/662/small_2x/ai-generated-round-sun-isolated-on-transparent-background-free-png.png);
+    background-size: cover;
+    border-radius: 50%;
+
+}
+.earth{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url(https://pngimg.com/uploads/earth/earth_PNG8.png);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 20px 20px 10pc 2px #000;
+    animation: ro 4s infinite ;
+}
+
+@keyframes ro {
+    50% {
+        left: calc(100% - 60px);
+        top: calc(100% - 40px);
+    }
+    100% {
+        z-index: -1;
+    }
+}
